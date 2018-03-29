@@ -29,6 +29,6 @@ public class Stock {
     }
 
     public double getChangePercent(double previousClosingPrice, double currentPrice) {
-        return (currentPrice - previousClosingPrice) * 100;
+        return (currentPrice - previousClosingPrice) / previousClosingPrice * 100;
     }
 }
